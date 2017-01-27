@@ -1,0 +1,15 @@
+h1{
+	text-align:center;
+	background-color:blue;
+}
+
+div{
+	background-color:#9999FF;
+	height:600px;
+	width:400px;
+	margin:auto;
+}
+
+body{
+	text-align:center;
+}

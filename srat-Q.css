@@ -1,0 +1,24 @@
+/* Styling for the self-referential aptitude test.
+ *
+ * $Id: srat-Q.css,v 1.6 2010-01-03 22:10:56 eddy Exp $
+ */
+@import "../scripted.css";
+
+/* The inner <il>s are our answers, so need A, B, C, D, E numbering: */
+li ol { list-style: upper-latin; }
+
+/* CSS3: not yet widely supported ! */
+input:checked + input { visibility: hidden; }
+
+/* The form background is grey, so .right shows up: */
+form { background-color: #bbb; }
+
+/* Classes for the questions, to indicate status when last checked: */
+li.wrong { background-color: pink; }
+li.dodgy { background-color: #999; }
+li.maybe { background-color: #ddd; }
+li.right { background-color: white; }
+
+/* Dynamic assistance: useless unless we've got JavaSpit active; which unsets
+ * className on relevant elements. */
+.cheat { display: none; }
